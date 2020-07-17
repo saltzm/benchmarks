@@ -7,6 +7,14 @@ the same thing that I think people either:
 1) May not know will affect performance, or
 2) Know will affect performance, but not know how much
 
+Benchmarks include measurements for:
+* Function call overhead: Virtual member function vs. non-virtual member function vs. lambda function vs. std::function
+* Effects of data locality/cache misses
+* [False sharing between threads](https://software.intel.com/content/www/us/en/develop/articles/avoiding-and-identifying-false-sharing-among-threads.html)
+* Using mutexes vs. atomics
+
+There are a few TODOs left in benchmarks.cpp that are worth paying attention to. I'll probably clean this up more in the following weeks.
+
 # How to Install and Run
 
 ```bash
