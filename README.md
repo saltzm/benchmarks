@@ -1,6 +1,13 @@
 
+# About
 
-Installation:
+I wrote these benchmarks for a presentation on "Performance Tips, Tricks, and
+Gotchas". They contain benchmarks to compare several different ways of doing
+the same thing that I think people either:
+1) May not know will affect performance, or
+2) Know will affect performance, but not know how much
+
+# Installation
 
 ```bash
 # Install conan. Used to fetch google benchmark.
