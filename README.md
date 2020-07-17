@@ -3,9 +3,9 @@
 
 I wrote these benchmarks for a presentation on "Performance Tips, Tricks, and
 Gotchas". They contain benchmarks to compare several different ways of doing
-the same thing that I think people either:
-1) May not know will affect performance, or
-2) Know will affect performance, but not know how much
+the same thing in C++ that I think people either:
+1) may not know will affect performance, or
+2) know will affect performance, but not how much.
 
 Benchmarks include measurements for:
 * Function call overhead: Virtual member function vs. non-virtual member function vs. lambda function vs. std::function
