@@ -13,7 +13,7 @@ Benchmarks include measurements for:
 * [False sharing between threads](https://software.intel.com/content/www/us/en/develop/articles/avoiding-and-identifying-false-sharing-among-threads.html)
 * Using mutexes vs. atomics
 
-There are a few TODOs left in benchmarks.cpp that are worth paying attention to. I'll probably clean this up more in the following weeks.
+This is a work in progress and there are a few TODOs left in benchmarks.cpp that are worth paying attention to. I'll clean this up more in the following weeks.
 
 # How to Install and Run
 
