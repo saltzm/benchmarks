@@ -36,7 +36,7 @@ mkdir build && cd build
 conan install ..
 
 # Configure cmake
-cmake .. -G "Unix Makefiles" -DCMAKE\_BUILD\_TYPE=Release
+cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
 # Build benchmark
 cmake --build .
 # Run benchmark
