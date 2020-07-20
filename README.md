@@ -19,6 +19,17 @@ This is a work in progress and there may be mistakes. There are also a few TODOs
 left in benchmarks.cpp that are worth paying attention to. I'll clean this up more 
 in the following weeks.
 
+# Caveats
+Never take benchmarks at face value and assume the results will always be
+the same. There's a lot of context that goes with each of these, which means that
+you might not want to always do the thing that appears fastest here. For example,
+in different situations the compiler is able to perform different optimizations, 
+so something that looks "free" in the benchmark might turn out not to be free in 
+your code - or something that seems faster in a microbenchmark might adversely impact
+performance in another way. The point of this is to understand different factors that 
+*might* affect performance so that you can watch out for them and consider them - not 
+to tell you what's right or what's wrong to use in every situation.
+
 # How to Install and Run
 
 ```bash
