@@ -2,10 +2,12 @@
 # About
 
 I wrote these benchmarks for a presentation on "Performance Tips, Tricks, and
-Gotchas". They contain benchmarks to compare several different ways of doing
-the same thing in C++ that I think people either:
-1) may not know will affect performance, or
-2) know will affect performance, but not how much.
+Gotchas". They contain benchmarks to compare several ways of doing
+the same thing in C++ that are subtly different on the surface but may differ 
+significantly in terms of performance. Writing these was an interesting learning
+opportunity for me, because I learned how to write these benchmarks in the process 
+of doing it, and though I already knew that in principal there were performance 
+differences between these things, I'd never actually taken the time to measure them.
 
 Benchmarks include measurements for:
 * Function call overhead: Virtual member function vs. non-virtual member function vs. lambda function vs. std::function
@@ -13,7 +15,9 @@ Benchmarks include measurements for:
 * [False sharing between threads](https://software.intel.com/content/www/us/en/develop/articles/avoiding-and-identifying-false-sharing-among-threads.html)
 * Using mutexes vs. atomics
 
-This is a work in progress and there are a few TODOs left in benchmarks.cpp that are worth paying attention to. I'll clean this up more in the following weeks.
+This is a work in progress and there may be mistakes. There are also a few TODOs 
+left in benchmarks.cpp that are worth paying attention to. I'll clean this up more 
+in the following weeks.
 
 # How to Install and Run
 
